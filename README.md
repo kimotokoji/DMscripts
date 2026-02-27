@@ -47,7 +47,7 @@ Display two windows side by side vertically or horizontally.
 [FilmRoll.s](scripts/FilmRoll.s)  
 3Dスタック画像を、縦あるいは横につなげて２次元表示。並べて観察したい場合、同じLUTで観察したい場合に。  
 Display 3D images vertically or horizontally as a 2D film roll. For cases where you want to view them side by side or observe them using the same LUT.  
-<img alt="Holizontal film roll example" src="img/filmrollH.png" width="700px">
+<img alt="Holizontal film roll example" src="img/filmRollH.png" width="700px">
 
 ### Display in pseudo color  
 [PseudoColorBlueWhiteRed.s](scripts/PseudoColorBlueWhiteRed.s)  
