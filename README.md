@@ -10,8 +10,8 @@
   - [Calibration tools](#calibration-tools)
     - [Copy calibration: snippet below](#copy-calibration-snippet-below)
     - [Coply image-tag: snippet below](#coply-image-tag-snippet-below)
-    - [Save image-tag as .gtg file: snipet below](#save-image-tag-as-gtg-file-snipet-below)
-    - [Save global-tag as .gtg file: snipet below](#save-global-tag-as-gtg-file-snipet-below)
+    - [Save image-tag as .gtg file: snippet below](#save-image-tag-as-gtg-file-snippet-below)
+    - [Save global-tag as .gtg file: snippet below](#save-global-tag-as-gtg-file-snippet-below)
     - [Diffraction centering using ROI: DiffOriginByROI.s](#diffraction-centering-using-roi-difforiginbyrois)
     - [Diffraction centering using Numpad: DiffOriginByNumpad.s](#diffraction-centering-using-numpad-difforiginbynumpads)
   - [Analysis tools](#analysis-tools)
@@ -76,7 +76,7 @@ TagGroup TargetTags =ImageGetTagGroup(imgto)
 TagGroupCopyTagsFrom(TargetTags, SourceTags)  
 ```  
 
-### Save image-tag as .gtg file: snipet below
+### Save image-tag as .gtg file: snippet below
 ``` C++
 // See and Save ImageTag as .gtg file
 Image img := GetFrontImage()
@@ -88,7 +88,7 @@ SaveAsDialog("Save this global tags as .gtg", path, path)
 TagGroupSaveToFile(Itg,path)
 ```  
 
-### Save global-tag as .gtg file: snipet below  
+### Save global-tag as .gtg file: snippet below  
 ``` c++
 // How to See and Save Global Tag as .gtg
 TagGroup Gtg =GetPersistentTagGroup( )
