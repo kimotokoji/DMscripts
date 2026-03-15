@@ -131,6 +131,7 @@ Rotatial averaged 1D of 2D image around the origin coordinates.
 ### Conversion 1/nm to mrad: [nmInvTomrad.s](scripts/nmInvTomrad.s)  
 通常、画像取得装置では、面間隔[nm]への変換が簡単になるように、回折図形は[1/nm]でキャリブレーションされています。一方、収束角などの実験条件は多くの場合には角度[mrad]で指定されています。しばしば実験条件を[mrad]で確認したいためこのscriptを作りました。加速電圧(V)によって波長(λ)が変わるため、散乱角2θと面間隔の逆数(1/d)との関係も変わります(2θ＝λ(V)/d)。そのため変換には加速電圧情報が必要です。通常の実験データでは加速電圧はimage tag（"Microscope Info:Voltage"）に保存されています。 次のscriptでは、[1/nm]を[mrad]に変換し、ファイル名に_mradをつけます(生データを間違って上書きしないようにするため)。加速電圧のtag情報が無い場合には、GetNumber()で入力を求めます。  
 Diffraction patterns are often calibrated in [1/nm] to simplify conversion to lattice spacing [nm]. Meanwhile, experimental conditions are often specified in angular units [mrad]. This script converts [1/nm] to [mrad]. Since the wavelength (λ) changes with the accelerating voltage (V), the relationship between the scattering angle 2θ and the reciprocal of the lattice spacing (1/d) also changes (2θ = λ(V)/d). Therefore, the accelerating voltage is required for the conversion. The accelerating voltage of each experiment is usually stored in image tag (“Microscope Info:Voltage”). The script converts [1/nm] to [mrad] and appends _mrad to the filename (to prevent accidental overwriting of raw data). If the acceleration voltage tag information is missing, it prompts for input using GetNumber().  
+
 <img alt="FignmInvTomrad.png" src="img/FignmInvTomrad.png" width="450px">
 
 
@@ -194,3 +195,25 @@ R-Phi to U-V (2D),  R-Phi to U-V (4D)
 - Further Examples
 -->
 
+
+<!-- 
+図張り込みの３つの方法
+1. Markdown
+    ![Fig2.1](img\Fig2-1.png)  
+
+2. HTML
+    <img alt="Fig2.1" src="img\Fig2-1.png" width="800px">
+    <img alt="XXXX" src="img/xxxx.png" width="800px" style="display: block; margin-left: auto; margin-right: auto;">
+
+    <figure style="text-align: center;">
+      <img src="img/filename.xxx" alt="図の説明" width="300px">
+    <figcaption>　ここにキャプションを記載 </figcaption>
+     </figure>
+
+3. HTML div    
+    <div style="text-align:center; color:grey">
+    <img src="*******" width="200px"> </br>
+    *********************Caption***************************
+    </div></br>
+
+-->
