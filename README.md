@@ -1,4 +1,4 @@
-# DigitalMicrograph scripts  
+# DigitalMicrograph scripts written by Kimoto 
 
 - [DigitalMicrograph scripts](#digitalmicrograph-scripts)
   - [Display tools](#display-tools)
